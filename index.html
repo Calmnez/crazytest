@@ -515,7 +515,7 @@ function nextTrial(){
 
     if(currentType === 'stop'){
       var progress = trialIndex / TOTAL_TRIALS;
-      var stopWindow = Math.round(1100 - progress * 150);
+      var stopWindow = Math.round(850 - progress * 200);
       stopWindowTimer = setTimeout(function(){
         // survived without tapping = correct inhibition
         results.push({type:'stop', correct:true, rt:null});
